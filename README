@@ -1,0 +1,21 @@
+API:
+Path: /lead
+HTTP method: post
+Content-Type: application/json
+
+body:
+{"agent_id":"agent email",
+"lead": {
+    "first_name": "firstname",
+    "last_name": "lastname"
+    .....
+    }
+}
+
+Return: json object
+if success, return the object inserted into DB.
+if there is no agent_id, return: {"err": "agent id is empty."}
+if there is no lead or lead's name, return: {"err": "there is no name for the lead."}
+
+
+This file was modified by JetBrains WebStorm 6.0.2 for binding GitHub repository
